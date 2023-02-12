@@ -69,12 +69,12 @@
     }
     //Projects
     function changeProductsLink() {
-        
+        document.getElementById('products').textContent = " Projects"
     }
 
     //Skills
 
-    //Abour
+    //About
 
 
     //Add new nav bar link
@@ -106,14 +106,6 @@
     function Start() {
         console.log("App Started!")
 
-        // switch (document.title) {
-        //     case "Lab 1 - Home":
-        //         displayText()
-        //         break;
-        //     case "Lab 1 - Products":
-        //         displayText()
-        //         break;
-        // }
         changeProductsLink()
         displayText()
     }
