@@ -69,11 +69,7 @@
     }
     //Projects
     function changeProductsLink() {
-        let test = document.getElementsByTagName("a")[0]
-        if(test = "Products") {
-            let txt = Element.textContent
-            console.log(txt)
-        }
+        
     }
 
     //Skills
@@ -84,6 +80,28 @@
     //Add new nav bar link
 
     //Add nav bar at the bottom, fixed + copywrite
+
+    //Contact Form
+    addEventListener('submit', submitForm => {
+        let form = document.querySelectorAll('input')
+
+        console.log("Name: " + form[0].value + "\nPhone Number: " + form[1].value + "\nEmail: " + form[2].value + "\nMessage: " + form[3].value)
+
+        redirectHome()
+        event.preventDefault()
+    })
+
+    function redirectHome() {
+        let redirectMessage = document.getElementById("redirectMessage")
+        redirectMessage.innerHTML = "<b>Successfully Submitted! Page will redirect soon..."
+
+        
+        setTimeout(home, 3000)
+    }
+
+    function home() {
+        let home = document.location.href = "./"
+    }
 
     function Start() {
         console.log("App Started!")
