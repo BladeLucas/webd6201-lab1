@@ -1,8 +1,14 @@
+/*
+    Names: Blade Lucas and Darren Dickson
+    Student ID's: 100708461 and 100724289
+    Date Completed: Feb 12, 2023
+*/
 (function () {
-    //Text injections
+    //Javascript html element injections via a switch to check which page the user is on
     //Home
     function displayText() {
         switch (document.title) {
+            //Sets all the html text for the Home Page
             case "Lab 1 - Home":
                 let mainContent = document.getElementsByTagName("main")[0]
                 mainContent.setAttribute("class", "container")
@@ -16,6 +22,7 @@
                 mainContent.appendChild(welcomeMessage)
                 break;
             
+            //Sets all the html text for the Projects(Formerly known as Products) Page
             case "Lab 1 - Products":
                 let mainProduct = document.getElementsByTagName("mainProduct")[0]
                 mainProduct.setAttribute("class", "container")
@@ -64,6 +71,7 @@
                 mainProduct.appendChild(favProjectPic3)
                 break;
 
+            //Sets the html text for the Services page
             case "Lab 1 - Services":
                 let mainServices = document.getElementsByTagName("mainServices")[0]
                 mainServices.setAttribute("class", "container")
@@ -113,6 +121,7 @@
 
                 break;
             
+            //Sets the html text for the About Us page
             case "Lab 1 - About":
 
                 let mainAbout = document.getElementsByTagName("mainAbout")[0]
@@ -159,6 +168,7 @@
 
                 break;
 
+            //Sets the html text for the Contact Us Page
             case "Lab 1 - Contacts": 
                 let mainContact = document.getElementsByTagName("mainContact")[0]
                 mainContact.setAttribute("class", "container")
@@ -174,17 +184,12 @@
         }
 
     }
-    //Projects
+    //Changes the name of the "Products" tab to "Projects" using the element ID
     function changeProductsLink() {
         document.getElementById('products').textContent = " Projects"
     }
 
-    //Skills
-
-    //About
-
-
-    //Add new nav bar link
+    //Add a new nav bar link called "Human Resources" between About us and Contact us with a redirect to "#"
     let navbar = document.querySelector("ul")
     let contactUsTab = document.getElementById("contactUsTab") 
     let humanResourcesTab = document.createElement("li")
@@ -192,7 +197,7 @@
 
     navbar.insertBefore(humanResourcesTab,contactUsTab)
 
-    //Add nav bar at the bottom, fixed + copywrite
+    //Adds a fixed bottom nav bar to show a copyright for the current year
 
     let copyRightLocation = document.getElementById("copyRight") 
 
@@ -202,28 +207,34 @@
 
     copyRightLocation.appendChild(copyRightBar)
 
-    //Contact Form
+    //Contact Form Logic
+    //Adds and event listener to the submit button
     addEventListener('submit', submitForm => {
         let form = document.querySelectorAll('input')
 
+        //Formats the query selectors results into human readable text for a console output
         console.log("Name: " + form[0].value + "\nPhone Number: " + form[1].value + "\nEmail: " + form[2].value + "\nMessage: " + form[3].value)
 
+        //Redirects the user to the Home page
         redirectHome()
+        //Prevents the normal function of the button 
         event.preventDefault()
     })
 
+    //Redirects the user to the home page after 3 seconds if the submission was successful
     function redirectHome() {
         let redirectMessage = document.getElementById("redirectMessage")
         redirectMessage.innerHTML = "<b>Successfully Submitted! Page will redirect soon..."
 
-        
         setTimeout(home, 3000)
     }
 
+    //Sets the home redirect link for the redirectHome function
     function home() {
         let home = document.location.href = "./"
     }
 
+    //Runs functions when the page is loaded
     function Start() {
         console.log("App Started!")
 
