@@ -87,6 +87,14 @@
 
     //Add nav bar at the bottom, fixed + copywrite
 
+    let copyRightLocation = document.getElementById("copyRight") 
+
+    let copyRightBar = document.createElement("nav")
+    copyRightBar.setAttribute("class", "navbar fixed-bottom navbar-light")
+    copyRightBar.innerHTML = '<div class="container-fluid"><a class="navbar-brand" href="#">&#169;CopyRight 2023</a></div>'
+
+    copyRightLocation.appendChild(copyRightBar)
+
     //Contact Form
     addEventListener('submit', submitForm => {
         let form = document.querySelectorAll('input')
