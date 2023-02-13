@@ -11,7 +11,7 @@
                 welcomeMessage.setAttribute("id","WelcomeMessage")
                 welcomeMessage.setAttribute("class", "mt-3")
                 
-                welcomeMessage.textContent = welcomeText
+                welcomeMessage.textContent = "Welcome to our incredible and very interesting site"
             
                 mainContent.appendChild(welcomeMessage)
                 break;
