@@ -1,35 +1,4 @@
 (function () {
-    //Declarations
-    let name1 = "Darren"
-    let name2 = "Blade"
-
-    //Home
-    let welcome = "Welcome"
-    let welcomeText = "Welcome to our incredible and very interesting site"
-
-    //Projects
-    let projects = "Projects"
-
-    let project1 = "The NASA Moon Landing"
-    let project2 = "NASA's Mars Exploration Rover mission"
-    let project3 = "The James Webb Telescope" 
-
-    //Services
-    let skills = "Skills"
-
-    let darrenSkill1 = "Object Oriented Programming"
-    let darrenSkill2 = "World Building"
-    let darrenSkill3 = "Music Theory"
-
-    let bladeSkill1 = "afthth"
-    let bladeSkill2 = "lhgbhc"
-    let bladeSkill3 = "zfsgre"
-
-    //About
-    let darrenDetails = "A up-and-coming programmer in love with all things the fall within the Nerd/Geek realm."
-    let bladeDetails = "dqfvrh"
-    let resume = "Resumes"
-
     //Text injections
     //Home
     function displayText() {
