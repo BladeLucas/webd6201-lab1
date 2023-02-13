@@ -5,28 +5,28 @@
 
     //Home
     let welcome = "Welcome"
-    let welcomeText = "Welcome to our site"
+    let welcomeText = "Welcome to our incredible and very interesting site"
 
     //Projects
     let projects = "Projects"
 
-    let project1 = "erwerw"
-    let project2 = "twtrfhs"
-    let project3 = "fkhyd" 
+    let project1 = "The NASA Moon Landing"
+    let project2 = "NASA's Mars Exploration Rover mission"
+    let project3 = "The James Webb Telescope" 
 
     //Services
     let skills = "Skills"
 
-    let darrenSkill1 = "hbgs"
-    let darrenSkill2 = "wrgsd"
-    let darrenSkill3 = "luik"
+    let darrenSkill1 = "Object Oriented Programming"
+    let darrenSkill2 = "World Building"
+    let darrenSkill3 = "Music Theory"
 
     let bladeSkill1 = "afthth"
     let bladeSkill2 = "lhgbhc"
     let bladeSkill3 = "zfsgre"
 
     //About
-    let darrenDetails = "ogftgngbd"
+    let darrenDetails = "A up-and-coming programmer in love with all things the fall within the Nerd/Geek realm."
     let bladeDetails = "dqfvrh"
     let resume = "Resumes"
 
@@ -78,13 +78,6 @@
 
 
     //Add new nav bar link
-    
-    let navbar = document.querySelector("ul")
-    let contactUsTab = document.getElementById("contactUsTab") 
-    let humanResourcesTab = document.createElement("li")
-    humanResourcesTab.innerHTML = '<a class="nav-link" href="#"><i class="fa-solid fa-handshake"></i><span id="hr"> Human Resources</span>'
-
-    navbar.insertBefore(humanResourcesTab,contactUsTab)
 
     //Add nav bar at the bottom, fixed + copywrite
 
