@@ -137,7 +137,7 @@
                 mainServices.appendChild(skill3)
 
                 let skillPic3 = document.createElement("img")
-                skillPic3.setAttribute("src", "images/Database.png")
+                skillPic3.setAttribute("src", "/images/Database.png")
                 skillPic3.setAttribute("width","500")
                 skillPic3.setAttribute("class", "mb-5")
                 mainServices.appendChild(skillPic3)
