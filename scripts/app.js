@@ -78,6 +78,13 @@
 
 
     //Add new nav bar link
+    
+    let navbar = document.querySelector("ul")
+    let contactUsTab = document.getElementById("contactUsTab") 
+    let humanResourcesTab = document.createElement("li")
+    humanResourcesTab.innerHTML = '<a class="nav-link" href="#"><i class="fa-solid fa-handshake"></i><span id="hr"> Human Resources</span>'
+
+    navbar.insertBefore(humanResourcesTab,contactUsTab)
 
     //Add nav bar at the bottom, fixed + copywrite
 
