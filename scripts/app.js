@@ -38,7 +38,7 @@
                 mainProduct.appendChild(favProjects1)
 
                 let favProjectPic1 = document.createElement("img")
-                favProjectPic1.setAttribute("src", "../images/moonLanding.jpg")
+                favProjectPic1.setAttribute("src", "./images/moonLanding.jpg")
                 favProjectPic1.setAttribute("width","500")
                 mainProduct.appendChild(favProjectPic1)
 
@@ -48,7 +48,7 @@
                 mainProduct.appendChild(favProjects2)
 
                 let favProjectPic2 = document.createElement("img")
-                favProjectPic2.setAttribute("src", "../images/marsRover.jpg")
+                favProjectPic2.setAttribute("src", "./images/marsRover.jpg")
                 favProjectPic2.setAttribute("width","500")
                 mainProduct.appendChild(favProjectPic2)
 
@@ -58,7 +58,7 @@
                 mainProduct.appendChild(favProjects3)
 
                 let favProjectPic3 = document.createElement("img")
-                favProjectPic3.setAttribute("src", "../images/telescope.jpg")
+                favProjectPic3.setAttribute("src", "./images/telescope.jpg")
                 favProjectPic3.setAttribute("width","500")
                 favProjectPic3.setAttribute("class", "mb-5")
                 mainProduct.appendChild(favProjectPic3)
@@ -86,7 +86,7 @@
                 mainServices.appendChild(skill1)
 
                 let skillPic1 = document.createElement("img")
-                skillPic1.setAttribute("src", "../images/code.jpg")
+                skillPic1.setAttribute("src", "./images/code.jpg")
                 skillPic1.setAttribute("width","500")
                 mainServices.appendChild(skillPic1)
 
@@ -96,7 +96,7 @@
                 mainServices.appendChild(skill2)
 
                 let skillPic2 = document.createElement("img")
-                skillPic2.setAttribute("src", "../images/frontEnd.jpg")
+                skillPic2.setAttribute("src", "./images/frontEnd.jpg")
                 skillPic2.setAttribute("width","500")
                 mainServices.appendChild(skillPic2)
 
@@ -137,7 +137,7 @@
 
                 let darrensResume = document.createElement("a")
                 darrensResume.setAttribute("class","mt-3")
-                darrensResume.setAttribute("href","../content/RESUME_OLD Darren Dickson_OCTOBER 2016.docx.pdf")
+                darrensResume.setAttribute("href","./content/RESUME_OLD Darren Dickson_OCTOBER 2016.docx.pdf")
                 darrensResume.textContent = "Link to Darren's Resume"
                 mainAbout.appendChild(darrensResume)
 
@@ -153,7 +153,7 @@
 
                 let bladesResume = document.createElement("a")
                 bladesResume.setAttribute("class","mt-3")
-                bladesResume.setAttribute("href","../content/Blade_Lucas_Resume_2022.pdf")
+                bladesResume.setAttribute("href","./content/Blade_Lucas_Resume_2022.pdf")
                 bladesResume.textContent = "Link to Blade's Resume"
                 mainAbout.appendChild(bladesResume)
 
